@@ -1,0 +1,33 @@
+// TODO
+// Copy this file and rename it config.production.json or config.development.json
+// Your url must be a fully qualified domain name [host name].[domain].[tld]
+// Change the server host IP if using a PAAS/Docker deployment to 0.0.0.0
+// Set the port you want your ghost app to listen to
+// Fill in every database credential field
+// DO NOT EVER GIT COMMIT THIS FILE WITH YOUR CREDENTIALS!!
+{
+    "url":"http://<your-ghost-url>",
+    "server": {
+        "host": "127.0.0.1",
+        "port": 8080
+    },
+    "database": {
+        "client": "mysql",
+        "connection": {
+            "host"     : "",
+            "user"     : "",
+            "password" : "",
+            "database" : ""
+        }
+    },
+    "paths": {
+        "contentPath": "content/"
+    },
+    "logging": {
+        "level": "info",
+        "rotation": {
+            "enabled": true
+        },
+        "transports": ["file", "stdout"]
+    }
+}
