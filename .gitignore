@@ -1,5 +1,6 @@
 # Configuration data
 config.production.json
+config.development.json
 
 # Logs
 logs
